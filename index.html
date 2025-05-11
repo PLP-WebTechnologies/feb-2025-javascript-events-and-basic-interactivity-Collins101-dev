@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Area -->
+    <header id="welcome-area" class="center">
+        <h1>Welcome to the Quiz!</h1>
+        <p>Test your knowledge by answering a series of questions. Click "Start Quiz" to begin!</p>
+        <button id="start-quiz-btn">Start Quiz</button>
+    </header>
+
+    <!-- Form Area -->
+    <section id="form-area" class="hidden center">
+        <h2>Enter Your Details</h2>
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6"><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Quiz Area -->
+    <section id="quiz-area" class="hidden center">
+        <h2 id="question-text">Question will appear here</h2>
+        <div id="answer-options">
+            <!-- Multiple-choice answers will be dynamically inserted here -->
+        </div>
+        <div>
+            <button id="prev-question-btn" class="hidden">Previous Question</button>
+            <button id="next-question-btn" class="hidden">Next Question</button>
+            <button id="submit-quiz-btn" class="hidden">Submit Quiz</button>
+        </div>
+    </section>
+
+    <!-- Result Area -->
+    <section id="result-area" class="hidden center">
+        <h2>Your Results</h2>
+        <p id="score-text">Your score will appear here.</p>
+        <p id="feedback-text">Feedback will appear here.</p>
+        <button id="restart-quiz-btn">Restart Quiz</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
